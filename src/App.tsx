@@ -1,4 +1,4 @@
-import Visualizer from './Visualizer.tsx';
+import Visualizer from './components/Visualizer.tsx';
 
 function App() {
   return <Visualizer />;

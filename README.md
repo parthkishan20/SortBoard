@@ -1,4 +1,4 @@
-# Sorting Visualizer
+# SortBoard
 
 A React-based sorting algorithm visualizer built with Vite, TypeScript, and Tailwind CSS. Watch different sorting algorithms come to life with smooth animations and real-time visualizations.
 

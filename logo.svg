@@ -1,0 +1,63 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="256" fill="url(#gradient1)"/>
+  
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="gradient1" x1="0" y1="0" x2="512" y2="512">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#db2777;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sorting Bars -->
+  <g transform="translate(100, 380)">
+    <!-- Bar 1 - Shortest -->
+    <rect x="10" y="-80" width="45" height="80" rx="8" fill="url(#gradient2)">
+      <animate attributeName="y" values="-80;-85;-80" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="80;85;80" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Bar 2 -->
+    <rect x="70" y="-140" width="45" height="140" rx="8" fill="url(#gradient3)">
+      <animate attributeName="y" values="-140;-145;-140" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="140;145;140" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Bar 3 -->
+    <rect x="130" y="-200" width="45" height="200" rx="8" fill="url(#gradient4)">
+      <animate attributeName="y" values="-200;-205;-200" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="200;205;200" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Bar 4 -->
+    <rect x="190" y="-160" width="45" height="160" rx="8" fill="url(#gradient2)">
+      <animate attributeName="y" values="-160;-165;-160" dur="2s" begin="0.9s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="160;165;160" dur="2s" begin="0.9s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Bar 5 - Tallest -->
+    <rect x="250" y="-230" width="45" height="230" rx="8" fill="url(#gradient3)">
+      <animate attributeName="y" values="-230;-235;-230" dur="2s" begin="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="height" values="230;235;230" dur="2s" begin="1.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Glow Effect -->
+  <circle cx="256" cy="256" r="240" fill="none" stroke="url(#gradient2)" stroke-width="2" opacity="0.3">
+    <animate attributeName="r" values="240;245;240" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+</svg>

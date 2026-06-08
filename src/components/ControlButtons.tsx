@@ -27,7 +27,7 @@ const ControlButtons = ({
         <>
           <button
             onClick={onStart}
-            className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 px-10 py-4 rounded-xl font-bold transition-all transform hover:scale-105 flex items-center gap-3 shadow-xl text-lg"
+            className="bg-white text-black hover:bg-zinc-200 px-10 py-4 rounded-xl font-bold transition-all transform hover:scale-105 flex items-center gap-3 shadow-lg text-lg"
           >
             <Play className="w-6 h-6" />
             Start Sorting
@@ -35,7 +35,7 @@ const ControlButtons = ({
           <button
             onClick={onGenerate}
             disabled={disabled}
-            className="bg-gradient-to-r from-gray-700 to-gray-600 hover:from-gray-600 hover:to-gray-500 px-10 py-4 rounded-xl font-bold transition-all transform hover:scale-105 flex items-center gap-3 shadow-xl text-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+            className="bg-zinc-900 border border-zinc-700 text-white hover:bg-zinc-800 hover:border-zinc-500 px-10 py-4 rounded-xl font-bold transition-all transform hover:scale-105 flex items-center gap-3 shadow-lg text-lg disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100"
           >
             <RotateCcw className="w-6 h-6" />
             Generate Array
@@ -46,7 +46,7 @@ const ControlButtons = ({
           {!isPaused ? (
             <button
               onClick={onPause}
-              className="bg-gradient-to-r from-yellow-600 to-yellow-700 hover:from-yellow-500 hover:to-yellow-600 px-10 py-4 rounded-xl font-bold transition-all transform hover:scale-105 flex items-center gap-3 shadow-xl text-lg"
+              className="bg-zinc-800 border border-zinc-600 text-white hover:bg-zinc-700 px-10 py-4 rounded-xl font-bold transition-all transform hover:scale-105 flex items-center gap-3 shadow-lg text-lg"
             >
               <Pause className="w-6 h-6" />
               Pause
@@ -54,7 +54,7 @@ const ControlButtons = ({
           ) : (
             <button
               onClick={onResume}
-              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 px-10 py-4 rounded-xl font-bold transition-all transform hover:scale-105 flex items-center gap-3 shadow-xl text-lg"
+              className="bg-white text-black hover:bg-zinc-200 px-10 py-4 rounded-xl font-bold transition-all transform hover:scale-105 flex items-center gap-3 shadow-lg text-lg"
             >
               <Play className="w-6 h-6" />
               Resume
@@ -62,7 +62,7 @@ const ControlButtons = ({
           )}
           <button
             onClick={onStop}
-            className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 px-10 py-4 rounded-xl font-bold transition-all transform hover:scale-105 flex items-center gap-3 shadow-xl text-lg"
+            className="bg-zinc-900 border border-zinc-600 text-white hover:bg-zinc-800 hover:border-zinc-400 px-10 py-4 rounded-xl font-bold transition-all transform hover:scale-105 flex items-center gap-3 shadow-lg text-lg"
           >
             <Square className="w-6 h-6" />
             Stop

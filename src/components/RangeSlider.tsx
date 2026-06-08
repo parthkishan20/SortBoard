@@ -5,7 +5,6 @@ interface RangeSliderProps {
   max: number;
   onChange: (value: number) => void;
   disabled?: boolean;
-  color: string;
   displayValue: string;
 }
 
@@ -16,15 +15,14 @@ const RangeSlider = ({
   max,
   onChange,
   disabled = false,
-  color,
   displayValue,
 }: RangeSliderProps) => {
   const percentage = ((value - min) / (max - min)) * 100;
 
   return (
     <div>
-      <label className="block text-sm font-semibold mb-3 text-gray-300">
-        {label}: <span className={`text-${color}-400`}>{displayValue}</span>
+      <label className="block text-sm font-semibold mb-3 text-zinc-400 uppercase tracking-wider">
+        {label}: <span className="text-white">{displayValue}</span>
       </label>
       <input
         type="range"
@@ -33,9 +31,9 @@ const RangeSlider = ({
         value={value}
         onChange={(e) => onChange(Number(e.target.value))}
         disabled={disabled}
-        className="w-full h-3 bg-gray-700 rounded-lg appearance-none cursor-pointer slider disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full h-2 rounded-lg appearance-none cursor-pointer slider disabled:opacity-40 disabled:cursor-not-allowed"
         style={{
-          background: `linear-gradient(to right, ${color} 0%, ${color} ${percentage}%, #374151 ${percentage}%, #374151 100%)`,
+          background: `linear-gradient(to right, #ffffff 0%, #ffffff ${percentage}%, #27272a ${percentage}%, #27272a 100%)`,
         }}
       />
     </div>

@@ -9,14 +9,14 @@ interface AlgorithmSelectorProps {
 const AlgorithmSelector = ({ selectedAlgorithm, onChange, disabled }: AlgorithmSelectorProps) => {
   return (
     <div>
-      <label className="block text-sm font-semibold mb-3 text-gray-300">
+      <label className="block text-sm font-semibold mb-3 text-zinc-400 uppercase tracking-wider">
         Algorithm
       </label>
       <select
         value={selectedAlgorithm}
         onChange={(e) => onChange(e.target.value as SortingAlgorithm)}
         disabled={disabled}
-        className="w-full bg-gray-700 border-2 border-gray-600 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all hover:border-blue-400"
+        className="w-full bg-zinc-900 border border-zinc-700 text-white rounded-xl px-4 py-3 focus:outline-none focus:ring-1 focus:ring-white focus:border-white disabled:opacity-40 disabled:cursor-not-allowed transition-all hover:border-zinc-400"
       >
         <option value="bubble">Bubble Sort</option>
         <option value="merge">Merge Sort</option>

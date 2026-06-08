@@ -1,25 +1,25 @@
 const Legend = () => {
   const legendItems = [
-    { color: 'bg-blue-400', label: 'Unsorted' },
-    { color: 'bg-yellow-400', label: 'Comparing' },
-    { color: 'bg-red-500', label: 'Swapping' },
-    { color: 'bg-purple-500', label: 'Pivot' },
-    { color: 'bg-green-500', label: 'Sorted' },
+    { color: 'bg-zinc-600', label: 'Unsorted' },
+    { color: 'bg-white', label: 'Comparing' },
+    { color: 'bg-zinc-300', label: 'Swapping' },
+    { color: 'bg-zinc-100', label: 'Pivot' },
+    { color: 'bg-zinc-500', label: 'Sorted' },
   ];
 
   return (
-    <div className="mt-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-xl p-6 border border-gray-700">
-      <h3 className="text-center text-sm font-semibold mb-4 text-gray-300 uppercase tracking-wider">
-        Color Legend
+    <div className="mt-8 bg-zinc-950 rounded-2xl shadow-xl p-6 border border-zinc-800">
+      <h3 className="text-center text-xs font-semibold mb-4 text-zinc-500 uppercase tracking-widest">
+        Legend
       </h3>
-      <div className="flex flex-wrap justify-center gap-6 text-sm">
+      <div className="flex flex-wrap justify-center gap-4 text-sm">
         {legendItems.map((item) => (
           <div
             key={item.label}
-            className="flex items-center gap-3 px-4 py-2 bg-gray-700 rounded-lg"
+            className="flex items-center gap-2 px-4 py-2 bg-zinc-900 border border-zinc-800 rounded-lg"
           >
-            <div className={`w-6 h-6 ${item.color} rounded-md shadow-lg`}></div>
-            <span className="font-medium">{item.label}</span>
+            <div className={`w-5 h-5 ${item.color} rounded-sm`}></div>
+            <span className="font-medium text-zinc-300">{item.label}</span>
           </div>
         ))}
       </div>

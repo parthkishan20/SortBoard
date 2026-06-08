@@ -29,12 +29,12 @@ const Visualizer = () => {
   const handleStop = () => stopSorting(generateArray);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white p-4 md:p-8">
+    <div className="min-h-screen bg-black text-white p-4 md:p-8">
       <div className="max-w-7xl mx-auto">
         <Header selectedAlgorithm={selectedAlgorithm} />
 
         {/* Controls */}
-        <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-2xl p-6 mb-8 border border-gray-700">
+        <div className="bg-zinc-950 rounded-2xl shadow-2xl p-6 mb-8 border border-zinc-800">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <AlgorithmSelector
               selectedAlgorithm={selectedAlgorithm}
@@ -49,7 +49,6 @@ const Visualizer = () => {
               max={100}
               onChange={setArraySize}
               disabled={isSorting}
-              color="#3b82f6"
               displayValue={arraySize.toString()}
             />
 
@@ -60,7 +59,6 @@ const Visualizer = () => {
               max={100}
               onChange={setSpeed}
               disabled={false}
-              color="#a855f7"
               displayValue={`${speed} steps/s`}
             />
           </div>

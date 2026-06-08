@@ -1,0 +1,48 @@
+{
+  "name": "SortBoard",
+  "description": "Built SortBoard, a responsive React + TypeScript sorting visualizer that animates 6 algorithms in real time using generator-based execution and user-controlled playback for interactive algorithm learning.",
+  "technologies": [
+    "React 19",
+    "TypeScript",
+    "Vite 7",
+    "Tailwind CSS 3",
+    "JavaScript Generators",
+    "Custom React Hooks",
+    "Lucide React",
+    "ESLint",
+    "GitHub Pages"
+  ],
+  "keywords": [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Tailwind CSS",
+    "Sorting Algorithms",
+    "Data Structures and Algorithms",
+    "Algorithm Visualization",
+    "Frontend Development",
+    "UI/UX",
+    "State Management",
+    "Custom Hooks",
+    "JavaScript Generators",
+    "Performance Optimization",
+    "Responsive Web Design",
+    "GitHub Pages"
+  ],
+  "url": "https://parthkishan20.github.io/SortBoard/",
+  "resume_summary": "Frontend engineer who built a production-ready sorting visualizer with generator-driven animations, clean React architecture, and deployable UX for algorithm education.",
+  "bullet_points": [
+    "Engineered an interactive sorting visualizer in React 19, TypeScript, and Vite with 6 algorithm implementations (Bubble, Merge, Quick, Insertion, Selection, Heap) to demonstrate algorithm behavior step-by-step.",
+    "Implemented generator-based sorting flows and a reusable animation engine in custom hooks, enabling pause, resume, stop, and speed control for smooth real-time playback.",
+    "Designed modular UI components and color-state visualization (comparing, swapping, pivot, sorted) to improve concept clarity and reduce cognitive load for learners.",
+    "Built configurable controls for array size (10-100) and execution speed (1-100 steps/sec), supporting multiple learning paces and side-by-side algorithm exploration.",
+    "Shipped a production deployment pipeline with Vite build + GitHub Pages publishing, delivering a live, accessible web demo for portfolio and interview use."
+  ],
+  "key_features": [
+    "Real-time visualization for 6 sorting algorithms",
+    "Pause, resume, stop, and restart controls",
+    "Adjustable array size and animation speed",
+    "Color-coded bar states and algorithm complexity display",
+    "Responsive UI for desktop, tablet, and mobile"
+  ]
+}

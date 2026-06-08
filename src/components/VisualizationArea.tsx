@@ -8,21 +8,21 @@ interface VisualizationAreaProps {
 const getBarColor = (state: ArrayBarType['state']) => {
   switch (state) {
     case 'comparing':
-      return 'bg-yellow-400';
+      return 'bg-white';
     case 'swapping':
-      return 'bg-red-500';
+      return 'bg-zinc-300';
     case 'sorted':
-      return 'bg-green-500';
+      return 'bg-zinc-500';
     case 'pivot':
-      return 'bg-purple-500';
+      return 'bg-zinc-100';
     default:
-      return 'bg-blue-400';
+      return 'bg-zinc-600';
   }
 };
 
 const VisualizationArea = ({ array, arraySize }: VisualizationAreaProps) => {
   return (
-    <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-2xl p-8 border border-gray-700">
+    <div className="bg-zinc-950 rounded-2xl shadow-2xl p-8 border border-zinc-800">
       <div className="flex items-end justify-center min-h-[500px] gap-0.5 px-4">
         {array.map((bar, idx) => (
           <div
@@ -34,8 +34,8 @@ const VisualizationArea = ({ array, arraySize }: VisualizationAreaProps) => {
               height: `${bar.value}px`,
               width: `${Math.max(3, Math.min(20, 800 / arraySize))}px`,
               boxShadow:
-                bar.state !== 'default'
-                  ? '0 0 10px rgba(59, 130, 246, 0.5)'
+                bar.state !== 'default' && bar.state !== 'sorted'
+                  ? '0 0 8px rgba(255, 255, 255, 0.35)'
                   : 'none',
             }}
           />
